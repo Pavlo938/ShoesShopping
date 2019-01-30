@@ -1,5 +1,5 @@
 $(function(){
-    //solving the active menu proble using Jquery
+    //solving the active menu problem using Jquery
     switch(menu){
         case 'About us':
         $('#about').addClass('active');
@@ -8,8 +8,13 @@ $(function(){
             $('#contact').addClass('active');
             break;
 
+        case 'All Products':
+            $('#listProducts').addClass('active');
+            break;
+
         default:
-            $('#home').addClass('active');
+            $('#listProducts').addClass('active');
+            $('#a_'+menu).addClass('active');
             break;
 
     }
